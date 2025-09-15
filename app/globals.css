@@ -3,24 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --olive: #2a7a3b;
-  --mustard: #d4a017;
-  --earth: #7a5a3a;
-  --charcoal: #333333;
+  --olive: #4b5320;
+  --mustard: #f2b705;
+  --charcoal: #2b2b2b;
+  --sand: #f6efe6;
+  --offwhite: #fbfbfb;
 }
 
-.text-olive { color: var(--olive); }
-.border-olive { border-color: var(--olive); }
-.bg-olive\/10 { background-color: rgba(42,122,59,0.1); }
-.text-mustard { color: var(--mustard); }
-.border-mustard { border-color: var(--mustard); }
-.bg-mustard\/10 { background-color: rgba(212,160,23,0.1); }
-.text-earth { color: var(--earth); }
-.border-earth { border-color: var(--earth); }
-.bg-earth\/10 { background-color: rgba(122,90,58,0.1); }
-.text-charcoal { color: var(--charcoal); }
-.border-charcoal { border-color: var(--charcoal); }
-.bg-charcoal\/10 { background-color: rgba(51,51,51,0.1); }
+@layer base {
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    @apply font-sans bg-offwhite text-charcoal antialiased;
+    background-color: var(--offwhite);
+    color: var(--charcoal);
+  }
+}
+
+@layer components {
+  .container { @apply max-w-6xl mx-auto px-6; }
+  .site-header { @apply bg-white border-b border-sand/50; }
+  .logo { @apply font-extrabold text-2xl tracking-tight; }
+}
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
 .card { background: white; border: 1px solid rgba(0,0,0,0.04); border-radius: 0.5rem; }
+
+@layer base {
+  /* sensible defaults for typography & background to match original design */
+  body { @apply font-body bg-offwhite text-charcoal antialiased; }
+  a { @apply underline-offset-4; }
+}
+
+@layer components {
+  /* Button / CTA components used across the site */
+  .btn { @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 font-medium shadow-sm transition-colors; }
+  .btn-primary { @apply btn bg-olive text-white hover:bg-olive/90; }
+  .btn-ghost { @apply btn bg-transparent border border-olive text-olive hover:bg-olive/5; }
+
+  /* Header / nav utilities */
+  .site-header { @apply bg-offwhite border-b border-slate-200; }
+  .logo { @apply font-heading text-xl font-extrabold text-olive; }
+}
