@@ -2,48 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --olive: #4b5320;
-  --mustard: #f2b705;
-  --charcoal: #2b2b2b;
-  --sand: #f6efe6;
-  --offwhite: #fbfbfb;
-}
+:root { --bg: #FAF8F4; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: #2F2B24; }
 
-@layer base {
-  html, body {
-    height: 100%;
-  }
-
-  body {
-    @apply font-sans bg-offwhite text-charcoal antialiased;
-    background-color: var(--offwhite);
-    color: var(--charcoal);
-  }
-}
-
-@layer components {
-  .container { @apply max-w-6xl mx-auto px-6; }
-  .site-header { @apply bg-white border-b border-sand/50; }
-  .logo { @apply font-extrabold text-2xl tracking-tight; }
-}
-
-.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-.card { background: white; border: 1px solid rgba(0,0,0,0.04); border-radius: 0.5rem; }
-
-@layer base {
-  /* sensible defaults for typography & background to match original design */
-  body { @apply font-body bg-offwhite text-charcoal antialiased; }
-  a { @apply underline-offset-4; }
-}
-
-@layer components {
-  /* Button / CTA components used across the site */
-  .btn { @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 font-medium shadow-sm transition-colors; }
-  .btn-primary { @apply btn bg-olive text-white hover:bg-olive/90; }
-  .btn-ghost { @apply btn bg-transparent border border-olive text-olive hover:bg-olive/5; }
-
-  /* Header / nav utilities */
-  .site-header { @apply bg-offwhite border-b border-slate-200; }
-  .logo { @apply font-heading text-xl font-extrabold text-olive; }
-}
+.container { @apply max-w-6xl mx-auto px-4; }
+.card { @apply rounded-2xl border border-sand/60 bg-white shadow-sm; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold; }
+.btn-primary { @apply bg-olive text-white hover:bg-olive/90; }
+.btn-ghost { @apply border border-olive/30 text-olive hover:bg-olive/5; }

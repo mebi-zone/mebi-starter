@@ -33,8 +33,8 @@ const SettingsIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 type Zone = {
   name: string;
-  subtitle: React.ReactNode;
-  icon: (props: React.SVGProps<SVGSVGElement>) => React.ReactElement;
+  subtitle: string;
+  icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
   borderClass: string;
   badgeBg: string;
   textClass: string;
