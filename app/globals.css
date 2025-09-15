@@ -11,3 +11,7 @@ body { background: var(--bg); color: #2F2B24; }
 .btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold; }
 .btn-primary { @apply bg-olive text-white hover:bg-olive/90; }
 .btn-ghost { @apply border border-olive/30 text-olive hover:bg-olive/5; }
+
+footer { background: transparent; }
+/* subtle muted text color used in footer */
+.text-charcoal\/70 { color: rgba(47,43,36,0.7); }
