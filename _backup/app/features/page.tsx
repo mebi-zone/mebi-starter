@@ -33,8 +33,9 @@ const SettingsIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 type Zone = {
   name: string;
+  // allow subtitle to be JSX (React nodes)
   subtitle: React.ReactNode;
-  // Use React.ReactElement type to avoid relying on the global JSX namespace in some CI environments
+  // prefer React.ReactElement signature to avoid global JSX namespace reliance
   icon: (props: React.SVGProps<SVGSVGElement>) => React.ReactElement;
   borderClass: string;
   badgeBg: string;
