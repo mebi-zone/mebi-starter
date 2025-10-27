@@ -45,26 +45,26 @@ type Zone = {
 export default function Features() {
   const zones: Zone[] = [
     {
-      name: "Player Zone",
-      subtitle: <span className="italic">"Công cụ cho vận động viên"</span>,
+      name: "Dành cho VĐV",
+      subtitle: <span className="italic">"Sổ tay hành trình thi đấu cá nhân"</span>,
       icon: UsersIcon,
       borderClass: "border-olive",
       badgeBg: "bg-olive/10",
       textClass: "text-olive",
-      points: ["Đăng ký thi đấu", "Nhận nhắc lịch SMS", "Xem thống kê cá nhân", "Lịch sử hành trình"],
+      points: ["Đăng ký thi đấu", "Nhận thông báo nhắc lịch", "Xem thống kê cá nhân", "Theo dõi hành trình"],
     },
     {
-      name: "Organizer Zone",
+      name: "Dành cho Tổ chức",
       subtitle: <span className="italic">"Quản lý giải đấu hiện đại"</span>,
       icon: TrophyIcon,
       borderClass: "border-mustard",
       badgeBg: "bg-mustard/10",
       textClass: "text-mustard",
-      points: ["Tạo giải/nhánh/vòng", "Duyệt Vận động viên", "Kết quả & thông báo", "Thống kê hiệu suất"],
+      points: ["Tạo giải nhiều cấp", "Duyệt Vận động viên", "Kết quả & thông báo", "Thống kê hiệu suất"],
     },
     {
-      name: "Mebi Zone",
-      subtitle: <span className="italic">"Không gian điều hành tùy chỉnh"</span>,
+      name: "Không gian bản sắc chuyên nghiệp",
+      subtitle: <span className="italic">"Nơi tổ chức điều hành tùy chỉnh"</span>,
       icon: DashboardIcon,
       borderClass: "border-earth",
       badgeBg: "bg-earth/10",
@@ -72,7 +72,7 @@ export default function Features() {
       points: ["Cấu hình theo yêu cầu", "Phân cấp quản lý", "Thống kê báo cáo", "Xếp hạng tùy biến"],
     },
     {
-      name: "Admin Zone",
+      name: "Dành cho Quản trị viên",
       subtitle: <span className="italic">"Điều phối hệ thống"</span>,
       icon: SettingsIcon,
       borderClass: "border-charcoal",
