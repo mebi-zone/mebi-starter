@@ -24,7 +24,7 @@ export default function Home() {
             <ul className="text-lg text-charcoal/80 space-y-2 list-disc list-inside">
               <li>Đăng ký & duyệt VĐV trong vài phút</li>
               <li>Lịch thi đấu tự động</li>
-              <li>Nhắc SMS</li>
+              <li>Thông báo kịp thời</li>
               <li>Kết quả minh bạch</li>
               <li>Thống kê & phân hạng chuẩn xác</li>
             </ul>
