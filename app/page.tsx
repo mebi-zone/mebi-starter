@@ -9,8 +9,8 @@ export default function Home() {
           <div className="space-y-6">
             <span className="inline-block rounded-full border border-mustard/40 bg-offwhite px-3 py-1 text-sm text-earth">Giải pháp SaaS cho Đơn vị tổ chức giải đấu & CLB Bida</span>
             <h1 className="font-extrabold leading-snug">
-              <span className="block text-4xl md:text-4xl text-mustard">Nền tảng Quản lý giải đấu & </span>
-              <span className="block text-6xl md:text-4xl text-olive">phân hạng bida chuyên nghiệp </span>
+              <span className="block text-4xl md:text-4xl text-mustard">Nền tảng Quản lý </span>
+              <span className="block text-6xl md:text-4xl text-olive">Giải đấu & Phân hạng Bida chuyên nghiệp </span>
             </h1>
             {/*<h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-olive">
               Ứng dụng {" "}
