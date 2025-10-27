@@ -2,7 +2,7 @@ import './globals.css'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Mebi - Tournament Management Platform',
+  title: 'Mebi Tournament Platform',
   description: 'Starter site',
 }
 
