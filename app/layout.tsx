@@ -18,7 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/pricing" className="hover:text-olive">Bảng giá</Link>
               <Link href="/blog" className="hover:text-olive">Bài viết</Link>
               <Link href="/changelog" className="hover:text-olive">Cập nhật</Link>
-              <a href="https://app.mebi.zone" className="btn btn-primary text-sm">Đăng nhập</a>
+              <a href="https://mebi.site" className="btn btn-primary text-sm">Tải ngay</a>
+              <a href="https://mediumpurple-quail-551962.hostingersite.com/" className="btn btn-primary text-sm">Đăng nhập</a>
             </nav>
           </div>
         </header>
