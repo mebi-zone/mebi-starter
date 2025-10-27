@@ -1,7 +1,7 @@
 const tiers = [
-  { name: 'MeSo', price: '0đ', features: ['Tạo tối đa 2 giải/tháng', '100 VĐV/tháng', 'Email support'] },
-  { name: 'MePro', price: 'X68.000đ/tháng', features: ['Không giới hạn giải', '1.000 VĐV/tháng', 'SMS nhắc lịch (tính riêng)'] },
-  { name: 'MeZo', price: 'Liên hệ', features: ['Cho Đơn vị tổ chức/Chuỗi CLB', 'Onboarding & hỗ trợ riêng', 'SLA & báo cáo định kỳ'] },
+  { name: 'Cơ Bản', price: 'Miễn phí', features: ['Tạo tối đa 2 giải/tháng', '100 VĐV/tháng', 'Email support'] },
+  { name: 'Nâng Cao', price: 'X68.000đ/tháng', features: ['Không giới hạn giải', '1.000 VĐV/tháng', 'SMS nhắc lịch (tính riêng)'] },
+  { name: 'Cao Cấp', price: 'Liên hệ', features: ['Cho Đơn vị tổ chức/Chuỗi CLB', 'Onboarding & hỗ trợ riêng', 'SLA & báo cáo định kỳ'] },
 ]
 
 export default function Pricing() {
