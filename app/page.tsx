@@ -23,7 +23,7 @@ export default function Home() {
             </p>
             <ul className="text-lg text-charcoal/80 space-y-2 list-disc list-inside">
               <li>Đăng ký & duyệt tham gia trong vài phút</li>
-              <li>Lịch thi đấu tự động</li>
+              <li>Cập nhật lịch đấu tự động</li>
               <li>Thông báo kịp thời</li>
               <li>Kết quả nhanh chóng</li>
               <li>Thống kê dữ liệu minh bạch</li>
