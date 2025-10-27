@@ -46,7 +46,7 @@ export default function Features() {
   const zones: Zone[] = [
     {
       name: "Dành cho VĐV",
-      subtitle: <span className="italic">"Sổ tay hành trình thi đấu cá nhân"</span>,
+      subtitle: <span className="italic">"Sổ tay hành trình thi đấu"</span>,
       icon: UsersIcon,
       borderClass: "border-olive",
       badgeBg: "bg-olive/10",
@@ -63,8 +63,8 @@ export default function Features() {
       points: ["Tạo giải nhiều cấp", "Duyệt Vận động viên", "Kết quả & thông báo", "Thống kê hiệu suất"],
     },
     {
-      name: "Không gian bản sắc chuyên nghiệp",
-      subtitle: <span className="italic">"Nơi tổ chức điều hành tùy chỉnh"</span>,
+      name: "Không gian chuyên nghiệp",
+      subtitle: <span className="italic">"Tổ chức điều hành tùy chỉnh"</span>,
       icon: DashboardIcon,
       borderClass: "border-earth",
       badgeBg: "bg-earth/10",
