@@ -49,8 +49,8 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { title: 'Đăng ký & Duyệt VĐV', desc: 'Đăng ký dễ dàng, xét duyệt nhanh, mã VĐV đồng bộ hệ thống.' },
-            { title: 'Tạo giải & Lịch tự động', desc: 'Thể thức linh hoạt; vòng đấu đa tầng; hệ thống sinh lịch và thông báo thông minh.' },
-            { title: 'Kết quả & Thống kê', desc: 'Cập nhật nhanh chóng, thống kê xếp hạng chuẩn xác, số liệu minh bạch.' },
+            { title: 'Tạo giải & Cập nhật lịch đấu', desc: 'Thể thức linh hoạt, vòng đấu đa tầng, hệ thống sinh lịch và thông báo thông minh.' },
+            { title: 'Thống kê & Phân hạng', desc: 'Cập nhật nhanh chóng, thống kê xếp hạng chuẩn xác, số liệu minh bạch.' },
           ].map((f, i) => (
             <div key={i} className="card p-6">
               <h3 className="font-semibold text-olive mb-2">{f.title}</h3>
