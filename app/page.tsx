@@ -7,7 +7,7 @@ export default function Home() {
       <section className="container pt-16 pb-10">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <span className="inline-block rounded-full border border-mustard/40 bg-offwhite px-3 py-1 text-sm text-earth">Giải pháp chuyên nghiệp cho Đơn vị tổ chức giải đấu & CLB Bida</span>
+            <span className="inline-block rounded-full border border-mustard/40 bg-offwhite px-3 py-1 text-sm text-earth">Giải pháp chuyên nghiệp cho Đơn vị tổ chức giải đấu & CLB Billiards</span>
             <h1 className="font-extrabold leading-snug">
               <span className="block text-4xl md:text-4xl text-mustard">Nền tảng quản lý giải đấu & </span>
               <span className="block text-4xl md:text-4xl text-olive">phân hạng VĐV Billiards</span>
