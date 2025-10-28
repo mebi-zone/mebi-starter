@@ -9,8 +9,8 @@ export default function Home() {
           <div className="space-y-6">
             <span className="inline-block rounded-full border border-mustard/40 bg-offwhite px-3 py-1 text-sm text-earth">Giải pháp chuyên nghiệp cho Đơn vị tổ chức giải đấu & CLB Bida</span>
             <h1 className="font-extrabold leading-snug">
-              <span className="block text-4xl md:text-4xl text-mustard">Quản lý giải đấu & </span>
-              <span className="block text-4xl md:text-4xl text-olive">phân hạng VĐV bộ môn Bida</span>
+              <span className="block text-4xl md:text-4xl text-mustard">Nền tảng quản lý giải đấu & </span>
+              <span className="block text-4xl md:text-4xl text-olive">phân hạng VĐV Billiards</span>
             </h1>
             {/*<h1 className="text-4xl md:text-5xl font-extrabold leading-tight text-olive">
               Ứng dụng {" "}
@@ -18,7 +18,10 @@ export default function Home() {
               <span className="block">Phân hạng người chơi</span>
             </h1>*/}
             <p className="mt-3 text-xl text-charcoal/80 text-earth">
-              Dễ dàng — Chuẩn xác — Minh bạch.
+              Dễ dàng — Chuẩn xác — Minh bạch
+            </p>
+            <p className="mt-3 text-xl text-charcoal/80 text-earth">
+              trong một hệ thống duy nhất
             </p>
             <ul className="text-lg text-charcoal/80 space-y-2 list-disc list-inside">
               <li>Đăng ký & duyệt tham gia trong vài phút</li>
