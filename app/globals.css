@@ -1,80 +1,104 @@
+@import "./tokens.scss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 /* 🌈 BRAND COLOR TOKENS */
 :root {
-  --color-brand: #F0BB44;          /* Golden Yellow – primary */
-  --color-brand-hover: #E0AC30;    /* hover */
-  --color-brand-bg: #FFF3D6;       /* ghost bg */
-  --color-bg: #FCFCFC;             /* Soft White – page bg */
-  --color-bg-offwhite: #FAF5EB;    /* offwhite section */
-  --color-text: #272727;           /* Charcoal Black */
-  --color-success: #026100;        /* Deep Green */
-  --color-error: #CE2222;          /* Crimson Red */
-  --color-earth: #B4633A;          /* Earth Clay accent */
-  --color-border: rgba(39,39,39,0.1);
+  --color-brand: #F0BB44;          /* Golden Yellow – màu thương hiệu chính */
+  --color-brand-hover: #E0AC30;    /* Hover vàng đậm hơn */
+  --color-brand-bg: #FFF3D6;       /* Nền nhẹ hơn brand (btn-ghost) */
+  --color-bg: #FCFCFC;             /* Soft White – nền chính */
+  --color-bg-offwhite: #FAF5EB;    /* Offwhite – tone ấm dịu */
+  --color-text: #272727;           /* Charcoal Black – chữ chính */
+  --color-success: #026100;        /* Deep Green – trạng thái tích cực */
+  --color-error: #CE2222;          /* Crimson Red – trạng thái lỗi */
+  --color-earth: #B4633A;          /* Earth Clay – accent tự nhiên */
+  --color-border: rgba(39, 39, 39, 0.1);
+
+  /* 🪶 FOUNDATION TOKENS */
+  --shadow-soft: 0 2px 10px rgba(0,0,0,0.04);
+  --radius-lg: 12px;
 }
 
 /* 🩶 BASE */
-body { background: var(--color-bg); color: var(--color-text); }
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
 
 /* 📦 LAYOUT */
-.container { @apply max-w-6xl mx-auto px-4; }
-.bg-offwhite { background: var(--color-bg-offwhite); }
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.bg-offwhite {
+  background: var(--color-bg-offwhite);
+}
 
 .card {
   @apply rounded-2xl border shadow-sm;
   border-color: var(--color-border);
   background: #FFFFFF;
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-lg);
 }
 
 /* 🔘 BUTTONS */
 .btn {
   @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold transition-all duration-200;
 }
+
+/* CTA chính */
 .btn-primary {
   background: var(--color-brand);
-  color: var(--color-text);             /* chữ đen như đã chốt */
+  color: var(--color-text); /* chữ đen cho dễ đọc */
 }
-.btn-primary:hover { background: var(--color-brand-hover); }
+.btn-primary:hover {
+  background: var(--color-brand-hover);
+}
 
+/* Nút phụ */
 .btn-ghost {
   border: 1px solid var(--color-brand);
   background: var(--color-brand-bg);
   color: var(--color-brand);
 }
-.btn-ghost:hover { background: color-mix(in srgb, var(--color-brand) 12%, white); }
-
-/* ✅ TINH CHỈNH THEO NHẬN XÉT */
-.hero-sub {                 /* subline ngay dưới H1 */
-  font-weight: 500;         /* đậm hơn 1 nấc cho cân nhịp */
+.btn-ghost:hover {
+  background: color-mix(in srgb, var(--color-brand) 12%, white);
 }
 
-/* nhóm CTA: giảm khoảng cách một chút */
-.cta-group { @apply flex items-center gap-3; } /* trước đây nếu dùng gap-4 thì thay bằng class này */
+/* ✅ TINH CHỈNH NHƯ ĐÃ TRAO ĐỔI */
+.hero-sub {
+  font-weight: 500; /* subline đậm hơn cho cân nhịp */
+}
 
-/* danh sách bullet gọn hơn */
+.cta-group {
+  @apply flex items-center gap-3; /* giảm khoảng cách giữa các nút */
+}
+
 .feature-list li {
-  line-height: 1.6;         /* giảm giãn dòng ~10% */
-  margin-bottom: 6px;       /* sát hơn một nhịp */
+  line-height: 1.6;   /* giảm giãn dòng ~10% */
+  margin-bottom: 6px; /* sát nhau hơn */
 }
 
-/* Accent Earth Clay nếu cần điểm nhấn */
+/* Accent Earth Clay (nâu đất tự nhiên) */
 .text-earth { color: var(--color-earth); }
-.bg-earth   { background: var(--color-earth); }
+.bg-earth { background: var(--color-earth); }
 
 /* Trạng thái hệ thống */
 .text-success { color: var(--color-success); }
-.text-error   { color: var(--color-error); }
+.text-error { color: var(--color-error); }
 
 /* FOOTER */
 footer { background: transparent; }
 
 /* subtle muted text color used in footer */
-.text-charcoal\/70 { color: rgba(39,39,39,0.7); }
+.text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); }
 
 /* tiện ích nhỏ cho brand */
 .bg-brand { background: var(--color-brand); }
