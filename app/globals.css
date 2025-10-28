@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root { --bg: #FAF8F4; }
-html { scroll-behavior: smooth; }
-body { background: var(--bg); color: #2F2B24; }
-
-.container { @apply max-w-6xl mx-auto px-4; }
-.card { @apply rounded-2xl border border-sand/60 bg-white shadow-sm; }
-.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold; }
-.btn-primary { @apply bg-olive text-white hover:bg-olive/90; }
-.btn-ghost { @apply border border-olive/30 text-olive hover:bg-olive/5; }
-
-footer { background: transparent; } */
-/* subtle muted text color used in footer */
-/*.text-charcoal\/70 { color: rgba(47,43,36,0.7); } */
-
 html {
   scroll-behavior: smooth;
 }
@@ -84,3 +70,16 @@ footer { background: transparent; }
 /* subtle muted text color used in footer */
 .text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); }
 
+/* :root { --bg: #FAF8F4; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: #2F2B24; }
+
+.container { @apply max-w-6xl mx-auto px-4; }
+.card { @apply rounded-2xl border border-sand/60 bg-white shadow-sm; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold; }
+.btn-primary { @apply bg-olive text-white hover:bg-olive/90; }
+.btn-ghost { @apply border border-olive/30 text-olive hover:bg-olive/5; }
+
+footer { background: transparent; } */
+/* subtle muted text color used in footer */
+/*.text-charcoal\/70 { color: rgba(47,43,36,0.7); } */
