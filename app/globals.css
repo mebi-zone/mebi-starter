@@ -8,6 +8,87 @@ html {
 
 /* 🌈 BRAND COLOR TOKENS */
 :root {
+  --color-brand: #F0BB44;          /* Golden Yellow – màu thương hiệu chính */
+  --color-brand-hover: #E0AC30;    /* Hover vàng đậm hơn */
+  --color-brand-bg: #FFF3D6;       /* Nền nhẹ hơn brand, dùng cho nút ghost */
+  --color-bg: #FCFCFC;             /* Soft White – nền tổng thể */
+  --color-bg-offwhite: #FAF5EB;    /* Offwhite – nền ấm nhẹ */
+  --color-text: #272727;           /* Charcoal Black – chữ chính */
+  --color-success: #026100;        /* Deep Green – trạng thái tích cực */
+  --color-error: #CE2222;          /* Crimson Red – trạng thái lỗi */
+  --color-earth: #B4633A;          /* Earth Clay – accent ấm tự nhiên */
+  --color-border: rgba(39, 39, 39, 0.1);
+}
+
+/* 🩶 BASE */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* 📦 LAYOUT */
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.card {
+  @apply rounded-2xl border shadow-sm;
+  border-color: var(--color-border);
+  background: #FFFFFF;
+}
+
+/* 🔘 BUTTONS */
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold transition-all duration-200;
+}
+
+/* CTA chính */
+.btn-primary {
+  background: var(--color-brand);
+  color: var(--color-text); /* chữ đen cho dễ đọc, đúng guideline */
+}
+.btn-primary:hover {
+  background: var(--color-brand-hover);
+}
+
+/* Nút phụ */
+.btn-ghost {
+  border: 1px solid var(--color-brand);
+  background: var(--color-brand-bg);
+  color: var(--color-brand);
+}
+.btn-ghost:hover {
+  background: color-mix(in srgb, var(--color-brand) 12%, white);
+}
+
+/* Trạng thái hệ thống */
+.text-success { color: var(--color-success); }
+.text-error { color: var(--color-error); }
+
+/* Accent (nâu đất – Earth Clay) */
+.text-earth { color: var(--color-earth); }
+.bg-earth { background: var(--color-earth); }
+
+/* FOOTER */
+footer { background: transparent; }
+
+/* subtle muted text color used in footer */
+.text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); }
+
+/* 🪶 BG variants */
+.bg-offwhite { background: var(--color-bg-offwhite); }
+.bg-brand { background: var(--color-brand); }
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🌈 BRAND COLOR TOKENS */
+:root {
   --color-brand: #F0BB44;     /* Golden Yellow */
   --color-brand-hover: #E0AC30;
   --color-brand-bg:#FFF9EE;
@@ -68,7 +149,7 @@ body {
 footer { background: transparent; }
 
 /* subtle muted text color used in footer */
-.text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); }
+.text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); } */
 
 /* :root { --bg: #FAF8F4; }
 html { scroll-behavior: smooth; }
