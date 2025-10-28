@@ -67,7 +67,8 @@ body {
 /* Nút phụ */
 .btn-ghost {
   border: 1px solid var(--color-brand);
-  color: var(--color-brand-bg);
+  background: var(--color-brand-bg);
+  color: var(--color-brand);
 }
 .btn-ghost:hover {
   background: color-mix(in srgb, var(--color-brand) 12%, white);
