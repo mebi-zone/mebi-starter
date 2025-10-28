@@ -1,0 +1,31 @@
+// 🎨 COLOR TOKENS
+$color-brand: #F0BB44;
+$color-brand-hover: #E0AC30;
+$color-brand-bg: #FFF3D6;
+$color-bg: #FCFCFC;
+$color-bg-offwhite: #FAF5EB;
+$color-text: #272727;
+$color-success: #026100;
+$color-error: #CE2222;
+$color-earth: #B4633A;
+$color-border: rgba(39, 39, 39, 0.1);
+
+// 🧱 FOUNDATION TOKENS
+$shadow-soft: 0 2px 10px rgba(0,0,0,0.04);
+$radius-lg: 12px;
+
+// 🎯 MAP TOKEN (chuẩn bị cho Tailwind theme hoặc export)
+:root {
+  --color-brand: #{$color-brand};
+  --color-brand-hover: #{$color-brand-hover};
+  --color-brand-bg: #{$color-brand-bg};
+  --color-bg: #{$color-bg};
+  --color-bg-offwhite: #{$color-bg-offwhite};
+  --color-text: #{$color-text};
+  --color-success: #{$color-success};
+  --color-error: #{$color-error};
+  --color-earth: #{$color-earth};
+  --color-border: #{$color-border};
+  --shadow-soft: #{$shadow-soft};
+  --radius-lg: #{$radius-lg};
+}
