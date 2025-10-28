@@ -7,7 +7,7 @@ export default function Home() {
       <section className="container pt-16 pb-10">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
-            <span className="inline-block rounded-full border border-mustard/40 bg-offwhite px-3 py-1 text-sm text-earth">Giải pháp chuyên nghiệp cho Đơn vị tổ chức giải đấu & CLB Billiards</span>
+            <span className="inline-block rounded-full border border-mustard/40 bg-offwhite px-3 py-1 text-sm text-earth">Giải pháp chuyên nghiệp cho Đơn vị tổ chức & CLB Billiards</span>
             <h1 className="font-extrabold leading-snug">
               <span className="block text-4xl md:text-4xl text-mustard">Nền tảng quản lý giải đấu & </span>
               <span className="block text-4xl md:text-4xl text-olive">phân hạng VĐV Billiards</span>
@@ -18,17 +18,14 @@ export default function Home() {
               <span className="block">Phân hạng người chơi</span>
             </h1>*/}
             <p className="mt-3 text-xl text-charcoal/80 text-earth">
-              Dễ dàng — Chuẩn xác — Minh bạch
-            </p>
-            <p className="mt-3 text-xl text-charcoal/80 text-earth">
-              trong một hệ thống duy nhất
+              Dễ dàng — Chuẩn xác — Minh bạch trong một hệ thống duy nhất
             </p>
             <ul className="text-lg text-charcoal/80 space-y-2 list-disc list-inside">
               <li>Đăng ký & duyệt tham gia trong vài phút</li>
-              <li>Cập nhật lịch đấu tự động</li>
-              <li>Thông báo kịp thời</li>
-              <li>Kết quả nhanh chóng</li>
-              <li>Thống kê dữ liệu minh bạch</li>
+              <li>Cập nhật lịch đấu nhanh chóng</li>
+              <li>Thông báo tự động</li>
+              <li>Kết quả minh bạch</li>
+              <li>Thống kê chuyên nghiệp</li>
               <li>Phân hạng chuẩn xác</li>
             </ul>
             <div className="flex gap-3">
