@@ -22,11 +22,11 @@ export default function Home() {
             </div>
             <ul className="text-lg text-charcoal/80 space-y-2 list-disc list-inside">
               <li>Hoàn tất đăng ký trong vài phút</li>
-              <li>Cập nhật lịch đấu nhanh chóng</li>
-              <li>Thông báo tự động</li>
-              <li>Kết quả minh bạch</li>
-              <li>Thống kê chuyên nghiệp</li>
-              <li>Phân hạng chuẩn xác</li>
+              <li>Cập nhật lịch thi đấu nhanh chóng</li>
+              <li>Thông báo tự động cho VĐV và BTC</li>
+              <li>Kết quả minh bạch, tra cứu mọi lúc</li>
+              <li>Thống kê chuyên nghiệp, hiển thị tức thì</li>
+              <li>Phân hạng chính xác theo hệ thống chuẩn</li>
             </ul>
             <div className="flex gap-3">
               <Link href="/pricing" className="btn btn-primary">Dùng thử miễn phí</Link>
