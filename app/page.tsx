@@ -10,7 +10,7 @@ export default function Home() {
             <span className="inline-block rounded-full border border-mustard/40 bg-offwhite px-3 py-1 text-sm text-earth">Giải pháp chuyên nghiệp cho Đơn vị tổ chức & Câu lạc bộ Billiards</span>
             <h1 className="font-extrabold leading-snug">
               <span className="block text-4xl md:text-4xl text-mustard"> MEBI APP</span>
-              <span className="block text-4xl md:text-4xl text-olive">Nền tảng ứng dụng quản lý giải đấu và phân hạng vận động viên Billiards</span>
+              <span className="block text-4xl md:text-4xl text-olive">Nền tảng ứng dụng quản lý giải đấu và phân hạng bida</span>
             </h1>
             <div className="leading-tight">
             <p className="text-xl text-charcoal/80 text-earth">
