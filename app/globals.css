@@ -28,6 +28,7 @@ html {
   --color-text: #272727;      /* Charcoal Black */
   --color-success: #026100;   /* Deep Green */
   --color-error: #CE2222;     /* Crimson Red */
+  --color-add: #B4633A;     /* Earth Clay */
   --color-border: rgba(39,39,39,0.1);
 }
 
@@ -56,7 +57,7 @@ body {
 /* CTA chính */
 .btn-primary {
   background: var(--color-brand);
-  color: var(--color-bg); /* chữ trắng */
+  color: var(--color-add); /* chữ trắng */
 }
 .btn-primary:hover {
   background: var(--color-brand-hover);
