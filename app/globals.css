@@ -56,7 +56,7 @@ body {
 /* CTA chính */
 .btn-primary {
   background: var(--color-brand);
-  color: var(--color-text); /* chữ đen */
+  color: var(--color-bg); /* chữ trắng */
 }
 .btn-primary:hover {
   background: var(--color-brand-hover);
