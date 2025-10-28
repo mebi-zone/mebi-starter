@@ -149,9 +149,9 @@ body {
 footer { background: transparent; }
 
 /* subtle muted text color used in footer */
-.text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); }
+.text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); } */
 
-:root { --bg: #FAF8F4; }
+/* :root { --bg: #FAF8F4; }
 html { scroll-behavior: smooth; }
 body { background: var(--bg); color: #2F2B24; }
 
