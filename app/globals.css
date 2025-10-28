@@ -12,9 +12,9 @@ body { background: var(--bg); color: #2F2B24; }
 .btn-primary { @apply bg-olive text-white hover:bg-olive/90; }
 .btn-ghost { @apply border border-olive/30 text-olive hover:bg-olive/5; }
 
-footer { background: transparent; }
+footer { background: transparent; } */
 /* subtle muted text color used in footer */
-.text-charcoal\/70 { color: rgba(47,43,36,0.7); } */
+/*.text-charcoal\/70 { color: rgba(47,43,36,0.7); } */
 
 html {
   scroll-behavior: smooth;
