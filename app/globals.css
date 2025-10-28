@@ -24,6 +24,7 @@ html {
 :root {
   --color-brand: #F0BB44;     /* Golden Yellow */
   --color-brand-hover: #E0AC30;
+  --color-brand-bg:#FFF2CC;
   --color-bg: #FCFCFC;        /* Soft White */
   --color-text: #272727;      /* Charcoal Black */
   --color-success: #026100;   /* Deep Green */
@@ -66,7 +67,7 @@ body {
 /* Nút phụ */
 .btn-ghost {
   border: 1px solid var(--color-brand);
-  color: var(--color-brand);
+  color: var(--color-brand-bg);
 }
 .btn-ghost:hover {
   background: color-mix(in srgb, var(--color-brand) 12%, white);
