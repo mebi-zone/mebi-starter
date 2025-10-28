@@ -12,12 +12,14 @@ export default function Home() {
               <span className="block text-4xl md:text-4xl text-mustard">Nền tảng quản lý giải đấu & </span>
               <span className="block text-4xl md:text-4xl text-olive">phân hạng VĐV Billiards</span>
             </h1>
+            <div className="leading-tight">
             <p className="text-xl text-charcoal/80 text-earth">
                 Dễ dàng — Chuẩn xác — Minh bạch
             </p>
             <p className="text-xl text-charcoal/80 text-earth">
                 Đa dạng tính năng trong một hệ thống duy nhất
             </p>
+            </div>
             <ul className="text-lg text-charcoal/80 space-y-2 list-disc list-inside">
               <li>Đăng ký & duyệt tham gia trong vài phút</li>
               <li>Cập nhật lịch đấu nhanh chóng</li>
