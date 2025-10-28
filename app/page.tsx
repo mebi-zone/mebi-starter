@@ -17,12 +17,21 @@ export default function Home() {
               <span className="block">Quản lý giải đấu & </span>
               <span className="block">Phân hạng người chơi</span>
             </h1>*/}
-            <p className="mt-3 text-xl text-charcoal/80 text-earth">
+            /*<p className="mt-3 text-xl text-charcoal/80 text-earth">
               Dễ dàng — Chuẩn xác — Minh bạch 
             </p>
             <p className="mt-3 text-xl text-charcoal/80 text-earth">
               Đa dạng tính năng trong một hệ thống duy nhất
-            </p>
+            </p>*/
+            <div className="text-center space-y-1">
+              <p className="text-xl text-charcoal/80 text-earth">
+                Dễ dàng — Chuẩn xác — Minh bạch
+              </p>
+              <p className="text-xl text-charcoal/80 text-earth">
+                Đa dạng tính năng trong một hệ thống duy nhất
+              </p>
+            </div>
+
             <ul className="text-lg text-charcoal/80 space-y-2 list-disc list-inside">
               <li>Đăng ký & duyệt tham gia trong vài phút</li>
               <li>Cập nhật lịch đấu nhanh chóng</li>
