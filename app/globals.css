@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { --bg: #FAF8F4; }
+/* :root { --bg: #FAF8F4; }
 html { scroll-behavior: smooth; }
 body { background: var(--bg); color: #2F2B24; }
 
@@ -14,4 +14,70 @@ body { background: var(--bg); color: #2F2B24; }
 
 footer { background: transparent; }
 /* subtle muted text color used in footer */
-.text-charcoal\/70 { color: rgba(47,43,36,0.7); }
+.text-charcoal\/70 { color: rgba(47,43,36,0.7); } */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🌈 BRAND COLOR TOKENS */
+:root {
+  --color-brand: #F0BB44;     /* Golden Yellow */
+  --color-brand-hover: #E0AC30;
+  --color-bg: #FCFCFC;        /* Soft White */
+  --color-text: #272727;      /* Charcoal Black */
+  --color-success: #026100;   /* Deep Green */
+  --color-error: #CE2222;     /* Crimson Red */
+  --color-border: rgba(39,39,39,0.1);
+}
+
+/* 🩶 BASE */
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* 📦 LAYOUT */
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.card {
+  @apply rounded-2xl border shadow-sm;
+  border-color: var(--color-border);
+  background: #FFFFFF;
+}
+
+/* 🔘 BUTTONS */
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold transition-all duration-200;
+}
+
+/* CTA chính */
+.btn-primary {
+  background: var(--color-brand);
+  color: var(--color-text); /* chữ đen */
+}
+.btn-primary:hover {
+  background: var(--color-brand-hover);
+}
+
+/* Nút phụ */
+.btn-ghost {
+  border: 1px solid var(--color-brand);
+  color: var(--color-brand);
+}
+.btn-ghost:hover {
+  background: color-mix(in srgb, var(--color-brand) 12%, white);
+}
+
+/* Trạng thái hệ thống */
+.text-success { color: var(--color-success); }
+.text-error { color: var(--color-error); }
+
+/* FOOTER */
+footer { background: transparent; }
+
+/* subtle muted text color used in footer */
+.text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); }
+
