@@ -2,33 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 /* 🌈 BRAND COLOR TOKENS */
 :root {
-  --color-brand: #F0BB44;     /* Golden Yellow */
-  --color-brand-hover: #E0AC30;
-  --color-brand-bg:#FFF9EE;
-  --color-bg: #FCFCFC;        /* Soft White */
-  --color-text: #272727;      /* Charcoal Black */
-  --color-success: #026100;   /* Deep Green */
-  --color-error: #CE2222;     /* Crimson Red */
-  --color-add: #B4633A;     /* Earth Clay */
+  --color-brand: #F0BB44;          /* Golden Yellow – primary */
+  --color-brand-hover: #E0AC30;    /* hover */
+  --color-brand-bg: #FFF3D6;       /* ghost bg */
+  --color-bg: #FCFCFC;             /* Soft White – page bg */
+  --color-bg-offwhite: #FAF5EB;    /* offwhite section */
+  --color-text: #272727;           /* Charcoal Black */
+  --color-success: #026100;        /* Deep Green */
+  --color-error: #CE2222;          /* Crimson Red */
+  --color-earth: #B4633A;          /* Earth Clay accent */
   --color-border: rgba(39,39,39,0.1);
 }
 
 /* 🩶 BASE */
-body {
-  background: var(--color-bg);
-  color: var(--color-text);
-}
+body { background: var(--color-bg); color: var(--color-text); }
 
 /* 📦 LAYOUT */
-.container {
-  @apply max-w-6xl mx-auto px-4;
-}
+.container { @apply max-w-6xl mx-auto px-4; }
+.bg-offwhite { background: var(--color-bg-offwhite); }
 
 .card {
   @apply rounded-2xl border shadow-sm;
@@ -40,46 +35,48 @@ body {
 .btn {
   @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold transition-all duration-200;
 }
-
-/* CTA chính */
 .btn-primary {
   background: var(--color-brand);
-  color: var(--color-bg); /* chữ trắng */
+  color: var(--color-text);             /* chữ đen như đã chốt */
 }
-.btn-primary:hover {
-  background: var(--color-brand-hover);
-}
+.btn-primary:hover { background: var(--color-brand-hover); }
 
-/* Nút phụ */
 .btn-ghost {
   border: 1px solid var(--color-brand);
   background: var(--color-brand-bg);
   color: var(--color-brand);
 }
-.btn-ghost:hover {
-  background: color-mix(in srgb, var(--color-brand) 12%, white);
+.btn-ghost:hover { background: color-mix(in srgb, var(--color-brand) 12%, white); }
+
+/* ✅ TINH CHỈNH THEO NHẬN XÉT */
+.hero-sub {                 /* subline ngay dưới H1 */
+  font-weight: 500;         /* đậm hơn 1 nấc cho cân nhịp */
 }
+
+/* nhóm CTA: giảm khoảng cách một chút */
+.cta-group { @apply flex items-center gap-3; } /* trước đây nếu dùng gap-4 thì thay bằng class này */
+
+/* danh sách bullet gọn hơn */
+.feature-list li {
+  line-height: 1.6;         /* giảm giãn dòng ~10% */
+  margin-bottom: 6px;       /* sát hơn một nhịp */
+}
+
+/* Accent Earth Clay nếu cần điểm nhấn */
+.text-earth { color: var(--color-earth); }
+.bg-earth   { background: var(--color-earth); }
 
 /* Trạng thái hệ thống */
 .text-success { color: var(--color-success); }
-.text-error { color: var(--color-error); }
+.text-error   { color: var(--color-error); }
 
 /* FOOTER */
 footer { background: transparent; }
 
 /* subtle muted text color used in footer */
-.text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); }
+.text-charcoal\/70 { color: rgba(39,39,39,0.7); }
 
-/* :root { --bg: #FAF8F4; }
-html { scroll-behavior: smooth; }
-body { background: var(--bg); color: #2F2B24; }
-
-.container { @apply max-w-6xl mx-auto px-4; }
-.card { @apply rounded-2xl border border-sand/60 bg-white shadow-sm; }
-.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold; }
-.btn-primary { @apply bg-olive text-white hover:bg-olive/90; }
-.btn-ghost { @apply border border-olive/30 text-olive hover:bg-olive/5; }
-
-footer { background: transparent; } */
-/* subtle muted text color used in footer */
-/*.text-charcoal\/70 { color: rgba(47,43,36,0.7); } */
+/* tiện ích nhỏ cho brand */
+.bg-brand { background: var(--color-brand); }
+.text-brand { color: var(--color-brand); }
+.border-brand { border-color: var(--color-brand); }
