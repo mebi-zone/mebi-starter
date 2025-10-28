@@ -1,4 +1,3 @@
-@import "./styles/tokens.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -56,7 +55,7 @@ body {
 /* CTA chính */
 .btn-primary {
   background: var(--color-brand);
-  color: var(--color-text); /* chữ đen cho dễ đọc */
+  color: var(--color-bg-offwhite); /* chữ trắng */
 }
 .btn-primary:hover {
   background: var(--color-brand-hover);
