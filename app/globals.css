@@ -10,14 +10,18 @@ html {
 :root {
   --color-brand: #F0BB44;          /* Golden Yellow – màu thương hiệu chính */
   --color-brand-hover: #E0AC30;    /* Hover vàng đậm hơn */
-  --color-brand-bg: #FFF3D6;       /* Nền nhẹ hơn brand, dùng cho nút ghost */
-  --color-bg: #FCFCFC;             /* Soft White – nền tổng thể */
-  --color-bg-offwhite: #FAF5EB;    /* Offwhite – nền ấm nhẹ */
+  --color-brand-bg: #FFF3D6;       /* Nền nhẹ hơn brand (btn-ghost) */
+  --color-bg: #FCFCFC;             /* Soft White – nền chính */
+  --color-bg-offwhite: #FAF5EB;    /* Offwhite – tone ấm dịu */
   --color-text: #272727;           /* Charcoal Black – chữ chính */
   --color-success: #026100;        /* Deep Green – trạng thái tích cực */
   --color-error: #CE2222;          /* Crimson Red – trạng thái lỗi */
-  --color-earth: #B4633A;          /* Earth Clay – accent ấm tự nhiên */
+  --color-earth: #B4633A;          /* Earth Clay – accent tự nhiên */
   --color-border: rgba(39, 39, 39, 0.1);
+
+  /* 🪶 FOUNDATION TOKENS */
+  --shadow-soft: 0 2px 10px rgba(0,0,0,0.04);
+  --radius-lg: 12px;
 }
 
 /* 🩶 BASE */
@@ -31,10 +35,16 @@ body {
   @apply max-w-6xl mx-auto px-4;
 }
 
+.bg-offwhite {
+  background: var(--color-bg-offwhite);
+}
+
 .card {
   @apply rounded-2xl border shadow-sm;
   border-color: var(--color-border);
   background: #FFFFFF;
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-lg);
 }
 
 /* 🔘 BUTTONS */
@@ -45,7 +55,7 @@ body {
 /* CTA chính */
 .btn-primary {
   background: var(--color-brand);
-  color: var(--color-text); /* chữ đen cho dễ đọc, đúng guideline */
+  color: var(--color-text); /* chữ đen cho dễ đọc */
 }
 .btn-primary:hover {
   background: var(--color-brand-hover);
@@ -61,13 +71,27 @@ body {
   background: color-mix(in srgb, var(--color-brand) 12%, white);
 }
 
+/* ✅ TINH CHỈNH NHƯ ĐÃ TRAO ĐỔI */
+.hero-sub {
+  font-weight: 500; /* subline đậm hơn cho cân nhịp */
+}
+
+.cta-group {
+  @apply flex items-center gap-3; /* giảm khoảng cách giữa các nút */
+}
+
+.feature-list li {
+  line-height: 1.6;   /* giảm giãn dòng ~10% */
+  margin-bottom: 6px; /* sát nhau hơn */
+}
+
+/* Accent Earth Clay (nâu đất tự nhiên) */
+.text-earth { color: var(--color-earth); }
+.bg-earth { background: var(--color-earth); }
+
 /* Trạng thái hệ thống */
 .text-success { color: var(--color-success); }
 .text-error { color: var(--color-error); }
-
-/* Accent (nâu đất – Earth Clay) */
-.text-earth { color: var(--color-earth); }
-.bg-earth { background: var(--color-earth); }
 
 /* FOOTER */
 footer { background: transparent; }
@@ -75,6 +99,7 @@ footer { background: transparent; }
 /* subtle muted text color used in footer */
 .text-charcoal\/70 { color: rgba(39, 39, 39, 0.7); }
 
-/* 🪶 BG variants */
-.bg-offwhite { background: var(--color-bg-offwhite); }
+/* tiện ích nhỏ cho brand */
 .bg-brand { background: var(--color-brand); }
+.text-brand { color: var(--color-brand); }
+.border-brand { border-color: var(--color-brand); }
