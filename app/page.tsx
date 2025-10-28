@@ -21,7 +21,7 @@ export default function Home() {
             </p>
             </div>
             <ul className="text-lg text-charcoal/80 space-y-2 list-disc list-inside">
-              <li>Đăng ký & duyệt tham gia trong vài phút</li>
+              <li>Hoàn tất đăng ký trong vài phút</li>
               <li>Cập nhật lịch đấu nhanh chóng</li>
               <li>Thông báo tự động</li>
               <li>Kết quả minh bạch</li>
